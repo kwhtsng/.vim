@@ -13,6 +13,7 @@ set statusline=%f
 set showcmd    " show command in the last line of the screen
 set wildmenu
 set showmatch
+set backspace=indent,eol,start
 source $VIMRUNTIME/macros/matchit.vim " % expansion
 syntax enable    " syntax highlighting
 
