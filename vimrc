@@ -4,6 +4,7 @@
 
 set number
 set cursorline
+set scrolloff=5
 set bs=2    " allow backspacing over everything in insert mode
 set viminfo='20,\"50    " read/write a .viminfo file, don't store more than 50 lines of registers
 set history=10000    " keep 10000 lines of registers
