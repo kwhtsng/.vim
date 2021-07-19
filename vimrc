@@ -3,6 +3,7 @@
 " #####################
 
 set number
+set relativenumber
 set cursorline
 set scrolloff=5
 set bs=2    " allow backspacing over everything in insert mode
@@ -47,6 +48,13 @@ nnoremap ; :
 nnoremap : ;
 nnoremap j gj
 nnoremap k gk
+nnoremap <Esc><Esc> :nohl<CR>
+
+" 80 column
+if (exists('+colorcolumn'))
+    set colorcolumn=80
+    highlight ColorColumn ctermbg=9
+endif
 
 " ##############
 " ### Plugin ###
