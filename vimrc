@@ -44,6 +44,7 @@ set directory=~/.vim/tmp
 set viminfo+=n~/.vim/tmp/viminfo.txt
 
 " Mapping
+let mapleader = "\<Space>"
 nnoremap ; :
 nnoremap : ;
 nnoremap j gj
