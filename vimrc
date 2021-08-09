@@ -70,6 +70,7 @@ Plug 'goerz/jupytext.vim'
 Plug 'airblade/vim-gitgutter'
 Plug 'junegunn/vim-easy-align'
 Plug 'bronson/vim-trailing-whitespace'
+Plug 'tpope/vim-fugitive'
 
 call plug#end()
 
