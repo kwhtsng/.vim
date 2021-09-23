@@ -1,6 +1,6 @@
-" #####################
-" ### Personal conf ###
-" #####################
+" #############################################################################
+" #    Personal conf                                                          #
+" #############################################################################
 
 set number
 set relativenumber
@@ -16,6 +16,7 @@ set showcmd    " show command in the last line of the screen
 set wildmenu
 set showmatch
 set backspace=indent,eol,start
+set encoding=utf-8
 source $VIMRUNTIME/macros/matchit.vim " % expansion
 syntax enable    " syntax highlighting
 
@@ -27,8 +28,7 @@ set incsearch    " while typing a search command, show where the pattern, as it 
 
 " Tabulation management
 set tabstop=4
-set shiftwidth=4
-set softtabstop=4
+set shiftwidth=0
 set expandtab    " use the appropriate number of spaces to insert a <Tab>
 set autoindent
 set smartindent
@@ -57,9 +57,9 @@ if (exists('+colorcolumn'))
     highlight ColorColumn ctermbg=9
 endif
 
-" ##############
-" ### Plugin ###
-" ##############
+" #############################################################################
+" #    Plugin                                                                 #
+" #############################################################################
 
 call plug#begin('~/.vim/plugged')
 
@@ -71,6 +71,7 @@ Plug 'airblade/vim-gitgutter'
 Plug 'junegunn/vim-easy-align'
 Plug 'bronson/vim-trailing-whitespace'
 Plug 'tpope/vim-fugitive'
+Plug 'vim-jp/vimdoc-ja'
 
 call plug#end()
 
