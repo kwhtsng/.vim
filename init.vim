@@ -9,7 +9,7 @@ set bs=2    " allow backspacing over everything in insert mode
 set viminfo='20,\"50    " read/write a .viminfo file, don't store more than 50 lines of registers
 set history=10000    " keep 10000 lines of registers
 set ruler    " show the cursor position all the time
-set laststatus=2    " statusline
+set laststatus=3    " statusline
 set statusline=%f
 set showcmd    " show command in the last line of the screen
 set wildmenu
@@ -28,14 +28,14 @@ set smartcase    " override the 'ignorecase' option if the search pattern contai
 set incsearch    " while typing a search command, show where the pattern, as it was typed so far, matches.
 
 " Tabulation management
-set tabstop=4
-set shiftwidth=0
+set tabstop=8
+set softtabstop=4
+set shiftwidth=4
 set expandtab    " use the appropriate number of spaces to insert a <Tab>
 set autoindent
 set smartindent
 augroup fileTypeIndent
     autocmd!
-    autocmd BufNewFile,BufRead *.py setlocal tabstop=4 softtabstop=4 shiftwidth=4
     autocmd BufNewFile,BufRead *.sql setlocal tabstop=2 softtabstop=2 shiftwidth=2
 augroup END
 
@@ -81,10 +81,13 @@ Plug 'tpope/vim-commentary'
 Plug 'vim-jp/vimdoc-ja'
 Plug 'prabirshrestha/vim-lsp'
 Plug 'mattn/vim-lsp-settings'
-Plug 'mattn/vim-lsp-icons'
+Plug 'prabirshrestha/asyncomplete.vim'
+Plug 'prabirshrestha/asyncomplete-lsp.vim'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'thinca/vim-quickrun'
+Plug 'PieterjanMontens/vim-pipenv'
+Plug 'Vimjas/vim-python-pep8-indent'
 
 call plug#end()
 
